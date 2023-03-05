@@ -1,0 +1,254 @@
+<!DOCTYPE HTML>
+<!--
+	Solid State by HTML5 UP
+	html5up.net | @ajlkn
+	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
+-->
+<html>
+	<head>
+		<title>Nikhil Sharma</title>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+		<link rel="stylesheet" href="assets/css/main.css" />
+		<noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
+		<style>
+		.skill {
+			margin-bottom: 20px;
+		  }
+		  
+		  .progress {
+			height: 20px;
+			margin-bottom: 10px;
+			background-color: #2e3141;
+			border-radius: 5px;
+			overflow: hidden;
+		  }
+		  
+		  .progress-bar {
+			height: 100%;
+			background-color: rgb(104, 255, 242);
+			border-radius: 5px;
+			transition: width 0.6s ease;
+		  }
+		  
+		  @media (prefers-reduced-motion: reduce) {
+			.progress-bar {
+			  transition: none;
+			}
+		  }
+		  
+		  .skill h3 {
+			margin-top: 0;
+			margin-bottom: 5px;
+		  }
+		  
+		  .sr-only {
+			position: absolute;
+			left: -10000px;
+			width: 1px;
+			height: 1px;
+			overflow: hidden;
+		  }
+
+		  #banner span {
+			font-size: 0.5em;
+			font-weight: bold;
+			color: rgb(104, 255, 242);
+			}
+		  </style>
+		  <script>
+		  function animateProgressBar() {
+			const progressBars = document.querySelectorAll('.progress-bar');
+			const speed = 20; // adjust this to control the animation speed
+			
+			progressBars.forEach(progressBar => {
+			  let width = 0;
+			  const targetWidth = progressBar.getAttribute('data-progress');
+		  
+			  const intervalId = setInterval(() => {
+				if (width >= targetWidth) {
+				  clearInterval(intervalId);
+				} else {
+				  width++;
+				  progressBar.style.width = `${width}%`;
+				}
+			  }, speed);
+			});
+		  }
+		  
+		  window.addEventListener('load', animateProgressBar);
+		  </script>
+	</head>
+	<body class="is-preload">
+
+		<!-- Page Wrapper -->
+			<div id="page-wrapper">
+
+				<!-- Header -->
+					<header id="header" class="alt">
+						<h1><a href="index.html">Nikhil's Portfolio</a></h1>
+						<nav>
+							<a href="#menu">Menu</a>
+						</nav>
+					</header>
+
+				<!-- Menu -->
+					<nav id="menu">
+						<div class="inner">
+							<h2>Menu</h2>
+							<ul class="links">
+								<li><a href="index.html">Home</a></li>
+								<li><a href="#one">Skills</a></li>
+								<li><a href="#four">Projects</a></li>
+								<li><a href="#footer">Connect</a></li>
+							</ul>
+							<a href="#" class="close">Close</a>
+						</div>
+					</nav>
+
+				<!-- Banner -->
+					<section id="banner">
+						<div class="inner">
+							<div class="logo"><span class="icon fa-gem"></span></div>
+							<h2>NIKHIL SHARMA, <span>WEB DEVELOPER</span></h2>
+							<p>Hi There! wELCOME TO the Showcase of my projects.</p>
+						</div>
+					</section>
+
+				<!-- Wrapper -->
+					<section id="wrapper">
+
+						<!-- One -->
+							<section id="one" class="wrapper spotlight style1">
+								<div class="inner">
+									<a href="#" class="image"><img src="images/pic09.jpg" alt=""/></a>
+									<div class="content">
+											<h2 class="major">SKILLS SECTION</h2>
+										<div class="skill">
+											<h3>HTML</h3>
+											<div class="progress">
+											  <div class="progress-bar" style="width: 90%;" data-progress="90">
+												<span class="sr-only">90% Complete</span>
+											  </div>
+											</div>
+										  </div>
+										  
+										  <div class="skill">
+											<h3>CSS</h3>
+											<div class="progress">
+											  <div class="progress-bar" style="width: 70%;" data-progress="70">
+												<span class="sr-only">70% Complete</span>
+											  </div>
+											</div>
+										  </div>
+										  
+										  <div class="skill">
+											<h3>JavaScript</h3>
+											<div class="progress">
+											  <div class="progress-bar" style="width: 66%;" data-progress="65">
+												<span class="sr-only">66% Complete</span>
+											  </div>
+											</div>
+										  </div>										  
+										  
+										  <div class="skill">
+											<h3>Java</h3>
+											<div class="progress">
+											  <div class="progress-bar" style="width: 70%;" data-progress="70">
+												<span class="sr-only">70% Complete</span>
+											  </div>
+											</div>
+										  </div>										  
+										  <div class="skill">
+											<h3>Python</h3>
+											<div class="progress">
+											  <div class="progress-bar" style="width: 60%;" data-progress="62">
+												<span class="sr-only">62% Complete</span>
+											  </div>
+											</div>
+										  </div>							  
+									</div>
+								</div>
+							</section>
+
+						<!-- Four -->
+							<section id="four" class="wrapper alt style1">
+								<div class="inner">
+									<h2 class="major">PROJECTS SECTION </h2>
+									<p>With a focus on creativity, innovation, and attention to detail, my portfolio reflects my commitment to delivering high-quality work that exceeds expectations.</p>
+									<section class="features">
+										<article>
+											<a href="#" class="image"><img src="images/img01.png" alt="" /></a>
+											<h3 class="major" style="
+											color: rgb(104, 255, 242);">APPLICATION FORM</h3>
+											<p>As a web developer, I believe that even the smallest details can have a big impact on the user experience, and I worked hard to ensure that every element of the form was thoughtfully crafted.</p>
+										</article>
+										<article>
+											<a href="#" class="image"><img src="images/img02.png" alt="" /></a>
+											<h3 class="major" style="
+											color: rgb(104, 255, 242);">TRIBUTE PAGE</h3>
+											<p>My tribute page project allowed me to combine my passion for web development with my love and admiration for a particular person.</p>
+										</article>
+										<article>
+											<a href="#" class="image"><img src="images/img05.png" alt="" /></a>
+											<h3 class="major" style="
+											color: rgb(104, 255, 242);">WEB DEVELOPER LANDING PAGE</h3>
+											<p>Overall, my landing page project is a showcase of my skills and my passion for web development, and I am excited to continue honing my craft and delivering great results for my clients.</p>
+										</article>
+										<article>
+											<a href="#" class="image"><img src="images/img04.webp" alt="" /></a>
+											<h3 class="major" style="
+											color: rgb(104, 255, 242);">RESTAURANT SITE</h3>
+											<p>The restaurant site project was a valuable learning experience for me, and I am confident that the skills I developed will help me create even better websites for future clients.</p>
+										</article>
+									</section>
+								</div>
+							</section>
+
+					</section>
+
+				<!-- Footer -->
+					<section id="footer">
+						<div class="inner">
+							<h2 class="major">Let's Connect</h2>
+							<p>No matter what you're looking for, I'm here to help. Contact me and let's make something amazing!</p>
+							<form method="post" action="#">
+								<div class="fields">
+									<div class="field">
+										<label for="name">Name</label>
+										<input type="text" name="name" id="name" />
+									</div>
+									<div class="field">
+										<label for="email">Email</label>
+										<input type="email" name="email" id="email" />
+									</div>
+									<div class="field">
+										<label for="message">Message</label>
+										<textarea name="message" id="message" rows="4"></textarea>
+									</div>
+								</div>
+								<ul class="actions">
+									<li><input type="submit" value="Send Message"/></li>
+								</ul>
+							</form>
+							<ul class="contact">
+								<li class="icon solid fa-envelope" style="color: rgb(104, 255, 242)"><a href="mailto:sharmanikhil12jv@gmail.com" target="_blank">sharmanikhil12jv@gmail.com</a></li>
+								<li class="icon brands fa-twitter" style="color: rgb(104, 255, 242)"><a href="https://twitter.com/Sharma_Nikh12" target="_blank">twitter.com/Sharma_Nikh12</a></li>
+								<li class="icon brands fa-linkedin" style="color: rgb(104, 255, 242)"><a href="https://www.linkedin.com/in/nikhil-sharma-41a287226/" target="_blank">linkedin.com/in/nikhil-sharma-41a287226</a></li>
+								<li class="icon brands fa-github" style="color: rgb(104, 255, 242)"><a href="https://github.com/NikhilCode12" target="_blank">github.com/NikhilCode12</a></li>
+							</ul>
+						</div>
+					</section>
+
+			</div>
+
+		<!-- Scripts -->
+			<script src="assets/js/jquery.min.js"></script>
+			<script src="assets/js/jquery.scrollex.min.js"></script>
+			<script src="assets/js/browser.min.js"></script>
+			<script src="assets/js/breakpoints.min.js"></script>
+			<script src="assets/js/util.js"></script>
+			<script src="assets/js/main.js"></script>
+
+	</body>
+</html>
